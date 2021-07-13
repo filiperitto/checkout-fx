@@ -1,0 +1,42 @@
+//== Component Section ::::
+
+.btn {
+    padding: 0 60px;
+    height: 47px;
+    font-size: 13px;
+    line-height: 47px;
+    /* identical to box height, or 177% */
+    
+    text-align: center;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    outline: none;
+    
+    color: #11273E;
+    
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+
+    border-radius: 4px;
+    margin-right: 0;
+    margin-bottom: 20px;
+    background: #27B893;
+    text-align: center;
+    letter-spacing: -0.045em;
+    color: #fff;
+    box-shadow: 0px 10px 40px -10px rgba(117, 226, 248, 0);
+    @include respond-to-min(580){
+        margin-right: 20px;
+    }
+    &:hover{
+        opacity: 0.9;
+    }
+    &.grey{
+        background: #BEBEBE;
+        &:hover{
+            opacity: 0.9;
+        }
+    } 
+}

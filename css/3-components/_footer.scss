@@ -1,0 +1,112 @@
+//== Footer Section ::::
+footer{
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    .squares{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        @include respond-to-min(900){
+            flex-direction: row;
+        }
+        .info-box{
+            width: 100%;
+            margin-bottom: 30px;
+            @include respond-to-min(900){
+                width: calc(33.3% - 29px);
+            }
+            &:nth-child(3){
+                width: 100%;
+                @include respond-to-min(900){
+                    width: 33.3%;
+                }
+            }
+            .title-box{
+                h3{
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 13px;
+                    line-height: 20px;
+                    /* identical to box height, or 133% */
+                    width: 100%;
+                    margin-right: 0;
+                    
+                    text-align: center;
+                    text-transform: uppercase;
+                    
+                    color: #2F3446;
+                }
+            }
+            p{
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 20px;
+                /* or 133% */
+                
+                text-align: center;
+                margin: 32px auto;
+                
+                color: #969696;
+            }
+        }
+    }
+    .copy-box{
+        width: 100%;
+        margin: 0;
+        padding: 20px 0;
+        background: #fff;
+        .wrap{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            border-top: 1px solid #000;
+            @include respond-to-min(750){
+                flex-direction: row;
+                align-items: center;
+            }
+        }
+        p{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px;
+            margin: 0;
+            /* identical to box height, or 143% */
+            
+            
+            color: #3C4152;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            margin-top: 10px;
+            @include respond-to-min(750){
+                display: flex;
+                margin-top: 0;
+            }
+            li{
+                margin: 0;
+                padding: 0;
+                &:first-child{
+                    @include respond-to-min(780){
+                        margin-right: 10px;
+                    }
+                }
+                a{
+                    font-size: 13px;
+                    line-height: 15px;
+                    color: #3C4152;
+                }
+            }
+        }
+    }
+    
+}
+//========== /Footer Section

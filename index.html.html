@@ -1,0 +1,606 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="pt-br">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <!-- Meta para HTML puro -->
+    <title>Fintrender</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    <meta name="description" content="WEBNAR FINTRENDER">
+    <meta name="keywords" content="Sample, HTML5, CSS3">
+    
+    <!-- Meta para Publicação do Facebook -->
+    <meta property="og:locale" content="pt-br">
+    <meta property="og:url" content="https://lp.fintrender.com/landingcc/?origem=MADNET_FOONE_FINTRENDER_CHECKOUT">
+    <meta property="og:title" content="Fintrender">
+    <meta property="og:site_name" content="Fintrender">
+    <meta property="og:description" content="WEBNAR FINTRENDER">
+    <meta property="og:image" content="imgs/placeholder-facebook-meta.jpg">
+    <meta property="og:type" content="website">
+
+    <!-- Meta para Publicação do Twitter -->
+    <meta name="twitter:site" content="@Fintrender">
+    <meta name="twitter:title" content="Fintrender">
+    <meta name="twitter:description" content="WEBNAR FINTRENDER">
+    <meta name="twitter:url" content="https://lp.fintrender.com/landingcc/?origem=MADNET_FOONE_FINTRENDER_CHECKOUT">
+    <meta name="twitter:image" content="imgs/placeholder-facebook-meta.jpg">
+    <meta name="twitter:card" content="summary">
+
+
+    <link rel="canonical" href="https://lp.fintrender.com/landingcc/?origem=MADNET_FOONE_FINTRENDER_CHECKOUT"/> <!-- Tag exclusiva da Home -->
+    <link rel="icon" type="image/png" sizes="192x192" href="imgs/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon/favicon-16x16.png">
+
+
+    <link rel="stylesheet" href="css/card.css" type="text/css" media="all" />
+    <script src="https://kit.fontawesome.com/030898659a.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Script para gerar searchbox na pesquisa do google https://developers.google.com/search/docs/guides/sd-policies#nesting
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "url": "https://www.example.com/",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://query.example.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        }
+    </script> -->
+
+</head>
+
+<body id="body">
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <div class="main">
+        <header>
+            <nav>
+                <img alt="" src="./imgs/logo.svg">
+            </nav>
+        </header>
+
+        <section id="hero-1" class="moduleCheckout">
+
+            <div class="progression">
+                <div class="step active">
+                    <icon>1</icon> <span>Dados de pagamentos</span>
+                </div>
+                <div class="step">
+                    <icon>2</icon> <span>Ordem Completa</span>
+                </div>
+            </div>
+
+            <div class="wrap">
+                <div class="header-product">
+                    <img alt="" src="./imgs/produto.png">
+                    <h1>Curso Aceleração Digital dos seus Investimentos</h1>
+                </div>
+
+                <div class="form-content">
+                    <form id="checkout" method="POST" action='index.php' data-ajax='false'>
+                        <input type='hidden' name='page' value='assinar_cc'>
+                        <input type='hidden' name='origem' value='##ORIGEM##'>
+                        <input type='hidden' name='id_tipo_assinatura' value='##ID_TIPO_ASSINATURA##'>
+                        <input type="hidden" name="pgCheckout" value="home" />
+                        <input type="hidden" name="pgObrigado" value="obrigado" />
+                        <input type='hidden' name='tipo' value='iugu'>
+                        <input type='hidden' name='tokenIugu' id="tokenIugu" value=''>
+
+                        <div class="card card-section">
+                            <div class="title-box">
+                                <h3>Endereço de cobrança</h3>
+                            </div>
+                            <div class="erro">##MSG_ERRO##</div>
+                            <div class="form-wrap">
+                                <div class="form-input form-nome">
+                                    <label for="first-name">Nome*</label>
+                                    <input name="first-name" type="text" id="first-name" size="2">
+                                    <i class="fas fa-check-circle"></i>
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    <small class="error">Error Message</small>
+                                </div>
+                                <div class="form-input form-sobrenome">
+                                    <label for="first-name">Sobrenome*</label>
+                                    <input name="last-name" type="text" id="last-name" size="2">
+                                    <i class="fas fa-check-circle"></i>
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    <small class="error">Error Message</small>
+                                </div>
+                                <div class="form-input form-cep">
+                                    <label for="cep">Cep*</label>
+                                    <input name="cep" type="text" id="cep" value="" size="10" maxlength="9" placeholder="xxxxx-xxx">
+                                    <i class="fas fa-check-circle"></i>
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    <small class="error">Error Message</small>
+                                </div>
+                                <div class="form-input form-estado">
+                                    <label for="uf">Estado*</label>
+                                    <input name="uf" type="text" id="uf" size="2">
+                                    <i class="fas fa-check-circle"></i>
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    <small class="error">Error Message</small>
+                                </div>
+                                <div class="form-input form-cidade">
+                                    <label for="cidade">Cidade*</label>
+                                    <input name="cidade" readonly='readonly' type="text" id="localidade"
+                                    size="40">
+                                    <i class="fas fa-check-circle"></i>
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    <small class="error">Error Message</small>
+                                </div>
+                                <div class="form-input form-bairro">
+                                    <label for="bairro">Bairro*</label>
+                                    <input name="bairro" readonly='readonly' type="text" id="bairro"
+                                    size="40">
+                                    <i class="fas fa-check-circle"></i>
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    <small class="error">Error Message</small>
+                                </div>
+                                <div class="form-input form-rua">
+                                    <label for="rua">Rua*</label>
+                                    <input name="rua" type="text" id="logradouro" size="60">
+                                    <i class="fas fa-check-circle"></i>
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    <small class="error">Error Message</small>
+                                </div>
+                                <div class="form-input form-numero">
+                                    <label for="numero">Numero*</label>
+                                    <input name="numero" type="number" id="numero" min="0" max="999999"
+                                    maxlength="6" size="40">
+                                    <i class="fas fa-check-circle"></i>
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    <small class="error">Error Message</small>
+                                </div>
+                                <div class="form-input form-comp">
+                                    <label for="complemento">Complemento</label>
+                                    <input name="complemento" type="text" id="complementoendereco" size="60">
+                                    <i class="fas fa-check-circle"></i>
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    <small class="error">Error Message</small>
+                                </div>
+                                <div class="form-input form-cpf">
+                                    <label for="cpf">CPF*</label>
+                                    <input name="cpf" id="cpf" maxlength="15" type="text" placeholder="___.___.___-__" required >
+                                    <i class="fas fa-check-circle"></i>
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    <small class="error">Error Message</small>
+                                </div>
+                                <div class="form-input form-celular">
+                                    <label for="telefone">Celular*</label>
+                                    <input id="telefone" name="telefone" placeholder="DDD+NUMERO"
+                                    maxlength="11" type="text">
+                                    <i class="fas fa-check-circle"></i>
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    <small class="error">Error Message</small>
+                                </div>
+                                <div class="form-input form-email">
+                                    <label for="email">Seu Email*</label>
+                                    <input id="email" name="email" maxlength="50" type="text" placeholder="Email que receberá o produto">
+                                    <i class="fas fa-check-circle"></i>
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    <small class="error">Error Message</small>
+                                </div>
+                                <div class="form-input form-email">
+                                    <label for="email-confirm">Confirme seu email*</label>
+                                    <input id="email-confirm" name="email-confirm" maxlength="50" type="text" placeholder="Digite novamente seu email">
+                                    <i class="fas fa-check-circle"></i>
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    <small class="error">Error Message</small>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="card card-section">
+                            <div class="title-box">
+                                <h3>Cartão de Crédito</h3>
+                                <img alt="" src="./imgs/cartoes.png">
+                            </div>
+                            <div class="form-wrap credit-card">
+                                <div class="container-flip preload">
+                                    <div class="creditcard">
+                                        <div class="front">
+                                            <div id="ccsingle"></div>
+                                            <svg version="1.1" id="cardfront" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                viewBox="0 0 750 471" style="enable-background:new 0 0 750 471;"
+                                                xml:space="preserve">
+                                                
+                                                <defs>
+                                                    <filter id="f1" x="0" y="0">
+                                                        <feGaussianBlur in="SourceGraphic" stdDeviation="5" />
+                                                    </filter>
+                                                </defs>
+                                                <g id="Front">
+                                                    <g id="CardBackground" class="cardBackground">
+                                                        <g id="Page-1_1_">
+                                                            <g id="amex_1_">
+                                                                <path id="Rectangle-1_1_" class="lightcolor grey" d="M40,0h670c22.1,0,40,17.9,40,40v391c0,22.1-17.9,40-40,40H40c-22.1,0-40-17.9-40-40V40
+                                                    C0,17.9,17.9,0,40,0z" />
+                                                            </g>
+                                                        </g>
+                                                        <path class="darkcolor greydark"
+                                                            d="M750,431V193.2c-217.6-57.5-556.4-13.5-750,24.9V431c0,22.1,17.9,40,40,40h670C732.1,471,750,453.1,750,431z" />
+                                                    </g>
+                                                    <text transform="matrix(1 0 0 1 60.106 295.0121)" id="svgnumber"
+                                                        class="st2 st3 st4"></text>
+                                                    <text transform="matrix(1 0 0 1 54.1064 428.1723)" id="svgname"
+                                                        class="st2 st5 st6"></text>
+                                                    <text transform="matrix(1 0 0 1 54.1074 389.8793)"
+                                                        class="st7 st5 st8">Nome no cartão</text>
+                                                    <text transform="matrix(1 0 0 1 479.7754 388.8793)"
+                                                        class="st7 st5 st8">Validade</text>
+                                                    <text transform="matrix(1 0 0 1 65.1054 241.5)"
+                                                        class="st7 st5 st8">Número do Cartão</text>
+                                                    <g>
+                                                        <text transform="matrix(1 0 0 1 574.4219 433.8095)"
+                                                            id="svgexpire" class="st2 st5 st9"></text>
+                                                        <text transform="matrix(1 0 0 1 479.3848 417.0097)"
+                                                            class="st2 st10 st11">VALID</text>
+                                                        <text transform="matrix(1 0 0 1 479.3848 435.6762)"
+                                                            class="st2 st10 st11">THRU</text>
+                                                        <polygon class="st2"
+                                                            points="554.5,421 540.4,414.2 540.4,427.9    " />
+                                                    </g>
+                                                    <g id="cchip">
+                                                        <g>
+                                                            <path class="st2"
+                                                                d="M168.1,143.6H82.9c-10.2,0-18.5-8.3-18.5-18.5V74.9c0-10.2,8.3-18.5,18.5-18.5h85.3
+                                                c10.2,0,18.5,8.3,18.5,18.5v50.2C186.6,135.3,178.3,143.6,168.1,143.6z" />
+                                                        </g>
+                                                        <g>
+                                                            <g>
+                                                                <rect x="82" y="70" class="st12" width="1.5"
+                                                                    height="60" />
+                                                            </g>
+                                                            <g>
+                                                                <rect x="167.4" y="70" class="st12" width="1.5"
+                                                                    height="60" />
+                                                            </g>
+                                                            <g>
+                                                                <path class="st12" d="M125.5,130.8c-10.2,0-18.5-8.3-18.5-18.5c0-4.6,1.7-8.9,4.7-12.3c-3-3.4-4.7-7.7-4.7-12.3
+                                                    c0-10.2,8.3-18.5,18.5-18.5s18.5,8.3,18.5,18.5c0,4.6-1.7,8.9-4.7,12.3c3,3.4,4.7,7.7,4.7,12.3
+                                                    C143.9,122.5,135.7,130.8,125.5,130.8z M125.5,70.8c-9.3,0-16.9,7.6-16.9,16.9c0,4.4,1.7,8.6,4.8,11.8l0.5,0.5l-0.5,0.5
+                                                    c-3.1,3.2-4.8,7.4-4.8,11.8c0,9.3,7.6,16.9,16.9,16.9s16.9-7.6,16.9-16.9c0-4.4-1.7-8.6-4.8-11.8l-0.5-0.5l0.5-0.5
+                                                    c3.1-3.2,4.8-7.4,4.8-11.8C142.4,78.4,134.8,70.8,125.5,70.8z" />
+                                                            </g>
+                                                            <g>
+                                                                <rect x="82.8" y="82.1" class="st12" width="25.8"
+                                                                    height="1.5" />
+                                                            </g>
+                                                            <g>
+                                                                <rect x="82.8" y="117.9" class="st12" width="26.1"
+                                                                    height="1.5" />
+                                                            </g>
+                                                            <g>
+                                                                <rect x="142.4" y="82.1" class="st12" width="25.8"
+                                                                    height="1.5" />
+                                                            </g>
+                                                            <g>
+                                                                <rect x="142" y="117.9" class="st12" width="26.2"
+                                                                    height="1.5" />
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                                <g id="Back">
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <div class="back">
+                                            <svg version="1.1" id="cardback" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                viewBox="0 0 750 471" style="enable-background:new 0 0 750 471;"
+                                                xml:space="preserve">
+                                                <g id="Front">
+                                                    <line class="st0" x1="35.3" y1="10.4" x2="36.7" y2="11" />
+                                                </g>
+                                                <g id="Back">
+                                                    <g id="Page-1_2_">
+                                                        <g id="amex_2_">
+                                                            <path id="Rectangle-1_2_" class="darkcolor greydark" d="M40,0h670c22.1,0,40,17.9,40,40v391c0,22.1-17.9,40-40,40H40c-22.1,0-40-17.9-40-40V40
+                                                C0,17.9,17.9,0,40,0z" />
+                                                        </g>
+                                                    </g>
+                                                    <rect y="61.6" class="st2" width="750" height="78" />
+                                                    <g>
+                                                        <path class="st3" d="M701.1,249.1H48.9c-3.3,0-6-2.7-6-6v-52.5c0-3.3,2.7-6,6-6h652.1c3.3,0,6,2.7,6,6v52.5
+                                            C707.1,246.4,704.4,249.1,701.1,249.1z" />
+                                                        <rect x="42.9" y="198.6" class="st4" width="664.1"
+                                                            height="10.5" />
+                                                        <rect x="42.9" y="224.5" class="st4" width="664.1"
+                                                            height="10.5" />
+                                                        <path class="st5"
+                                                            d="M701.1,184.6H618h-8h-10v64.5h10h8h83.1c3.3,0,6-2.7,6-6v-52.5C707.1,187.3,704.4,184.6,701.1,184.6z" />
+                                                    </g>
+                                                    <text transform="matrix(1 0 0 1 621.999 227.2734)"
+                                                        id="svgsecurity" class="st6 st7"></text>
+                                                    <g class="st8">
+                                                        <text transform="matrix(1 0 0 1 518.083 280.0879)"
+                                                            class="st9 st6 st10">CVV</text>
+                                                    </g>
+                                                    <rect x="58.1" y="378.6" class="st11" width="375.5"
+                                                        height="13.5" />
+                                                    <rect x="58.1" y="405.6" class="st11" width="421.7"
+                                                        height="13.5" />
+                                                    <text transform="matrix(1 0 0 1 59.5073 228.6099)"
+                                                        id="svgnameback" class="st12 st13"></text>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-cont">
+                                    <div class="form-input form-nome-cartao">
+                                        <label for="holdername_c">Titular do Cartão*</label>
+                                        <input onkeyup="value=value.replace(/[^a-zA-Z	 ]/g,'')" name="holdername_c"
+                                        id="holdername_c" maxlength="20" type="text" required placeholder="Nome impresso no cartão">
+                                        <i class="fas fa-check-circle"></i>
+                                        <i class="fas fa-exclamation-circle"></i>
+                                        <small class="error">Error Message</small>
+                                    </div>
+                                    <div class="form-input form-numero-cartao">
+                                        <label for="number_c">Número do Cartão*</label>
+                                        <span id="generatecard"
+                                        style="display:none">generate random</span>
+                                        <input name="number_c" id="number_c" type="text" placeholder="Somente números">
+                                        <i class="fas fa-check-circle"></i>
+                                        <i class="fas fa-exclamation-circle"></i>
+                                        <small class="error">Error Message</small>
+                                        <svg id="ccicon" class="ccicon" width="750" height="471"
+                                            viewBox="0 0 750 471" version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        </svg>
+                                    </div>
+                                    <div class="form-input form-validade">
+                                        <label for="exp_c">Validade*</label>
+                                        <input id="exp_c" name="exp_c" type="text" placeholder="MM/AA">
+                                        <i class="fas fa-check-circle"></i>
+                                        <i class="fas fa-exclamation-circle"></i>
+                                        <small class="error">Error Message</small>
+                                    </div>
+                                    <div class="form-input form-cvv">
+                                        <label for="cvv_c">CVV*</label>
+                                        <input id="cvv_c" name="cvv_c" type="text" placeholder="3 ou 4 dígitos">
+                                        <i class="fas fa-check-circle"></i>
+                                        <i class="fas fa-exclamation-circle"></i>
+                                        <small class="error">Error Message</small>
+                                    </div>
+                                    
+                                    <div class="col-md-12" style="display: none;">
+                                        <div class="field-container" style="margin-top:20px;">
+                                            <input id="plano-anual" placeholder="Plano Anual" readonly=""
+                                                maxlength="20" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-input form-parcelas">
+                                        <label>Valor Mensal</label>
+                                        <select id="installments" name="installments">
+                                            ##PARCELAS##
+                                        </select>
+                                        </input>
+                                    </div>
+    
+                                    <div class="form-checkbox termos">
+                                        <input type="checkbox" class="checkbox" name="envia_email_produto" id="terms" checked>
+                                        <label class="link-terms" for="terms">Li e Aceito os <a href="?page=navega&pg=termos" style="color: #75E2F8;" target="_blank">Termos de Uso</a></label>
+                                        <i class="fas fa-check-circle"></i>
+                                        <i class="fas fa-exclamation-circle"></i>
+                                        <small class="error">Error Message</small>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                        
+
+                        <div class="form-cont-btn">
+                            <button class="btn" id="btn-submit">
+                                Comprar Agora
+                            </button>
+                            <a href="#" class="btn grey" onClick="return">
+                                Cancelar pedido
+                            </a>
+                        </div>
+                    </form>
+
+                    <div class="card card-support">
+                        <div class="title-box">
+                            <h3>Sentiu duvida em algum coisa? Entre em contato conosco.</h3>
+                        </div>
+                        <div class="left-box">
+                            <div class="img-wrap">
+                                <img alt="" src="./imgs/placeholder-img.png">
+                            </div>
+                            <div class="info">
+                                <div>
+                                    <h3>Gustavo Cunha</h3>
+                                    <span>Especialista em criptomoedas</span>
+                                </div>
+                                <img alt="" src="./imgs/assinatura.png">
+                            </div>
+                        </div>
+                        <div class="right-box">
+                            <ul>
+                                <li>
+                                    <icon>
+                                        <img alt="" src="./imgs/icon-sidebar-email.png">
+                                    </icon>
+                                    <span>Tire duvida em <a href="mailto:email@email.com">email@email.com</a></span>
+                                </li>
+                                <li>
+                                    <icon>
+                                        <img alt="" src="./imgs/icon-sidebar-phone.png">
+                                    </icon>
+                                    <span>Ligue <a href="tel:+5521999999999">(11) 99999-9999</a><br> (Atendimento em horario comercial)</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <sidebar class="order-box">
+                    <div class="card order-wrap">
+                        <div class="title-box">
+                            <h3>Resumo da Compra</h3>
+                        </div>
+                        <div class="header-order">
+                            <div class="header">
+                                <img alt="" src="./imgs/produto.png">
+                                <h3>Curso Aceleração Digital dos seus investimentos</h3>
+                            </div>
+                            <p>Acesso integral ao curso Curso Aceleração dos Seu Investimentos por período indeterminado.</p>
+                        </div>
+                        <ul>
+                            <li>
+                                <span class="item-title">Data de Compra</span>
+                                <span class="item-name"> 17 Jul 2021</span>
+                            </li>
+                            <li>
+                                <span class="item-title">Hora da Compra</span>
+                                <span class="item-name"> 17:34 PM</span>
+                            </li>
+                            <li>
+                                <span class="hr"></span>
+                            </li>
+                            <li>
+                                <span class="item-title">Preço</span>
+                                <span class="item-name">R$ 1.974,00</span>
+                            </li>
+                            <li>
+                                <span class="item-title">Desconto</span>
+                                <span class="item-name">50%</span>
+                            </li>
+                            <li class="valor">
+                                <span class="item-title">Total</span>
+                                <span class="item-name">R$ 957,50</span>
+                                <span class="obs">ou em 10x de R$ 11,08* no cartão</span>
+                            </li>
+                            <li>
+                                <span class="hr"></span>
+                            </li>
+                            <li>
+                                <span class="selo">
+                                    <icon>
+                                        <img alt="" src="./imgs/icon-sidebar-seguro.png">
+                                    </icon>
+                                    Compra 100% segura
+                                </span>
+                            </li>
+                            <li class="info-text">
+                                <p>Este é um produto digital, você receberá as informações para acessá-lo através do email.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="order-selos">
+                        <div class="wrap-img">
+                            <img alt="" src="./imgs/image_17.svg">
+                        </div>
+                        <div class="wrap-img">
+                            <img alt="" src="./imgs/image_18.svg">
+                        </div>
+                        <div class="wrap-img">
+                            <img alt="" src="./imgs/pngegg_1.svg">
+                        </div>
+                    </div>
+                    <span class="last-selo">
+                        <icon>
+                            <img alt="" src="./imgs/cadeado.svg">
+                        </icon>
+                        <span>Sua informação segura</span>
+                    </span>
+                </sidebar>
+                
+            
+                
+            </div>
+        </section>
+
+
+        <footer>
+            <div class="squares wrap">
+                <div class="info-box card">
+                    <div class="title-box">
+                        <h3>Política de reembolso / cancelamento</h3>
+                    </div>
+                    <p>
+                        30 dias para<br>
+                        pedido de reembolso
+                    </p>
+                </div>
+                <div class="info-box card">
+                    <div class="title-box">
+                        <h3>privacidade e segurança</h3>
+                    </div>
+                    <p>
+                        Todas informações pessoais<br>
+                        são encriptadas e seguras
+                    </p>
+                </div>
+                <div class="info-box card">
+                    <div class="title-box">
+                        <h3>atendimento ao cliente de qualidade</h3>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet<br>
+                        dolor sit amet
+                    </p>
+                </div>
+            </div>
+
+            <div class="copy-box">
+                <div class="wrap">
+                    <p>Copyright © 2021 Fintrender. All rights reserved.</p>
+
+                    <ul>
+                        <li><a href="?page=navega&pg=termos">Políticas de Privacidade</a></li>
+                        <li><a href="?page=navega&pg=termos">Termos e Condições</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </footer>
+
+    </div>
+
+    
+    
+    <script type="text/javascript">
+
+        function marcaEvento(nome,pagina,tipo_evento){
+            let urlGet = "https://lp.fintrender.com/landingcc/marcaEventoPagina.php";
+            $.get( urlGet, { id_evento: "##ID_EVENTO##", pagina: pagina, origem: "##ORIGEM##", parceiro: "##ID_PARCEIRO##", tipo_evento:tipo_evento, nome_campo: nome } )
+            .done(function( data ) {
+                console.log("Enviou" + data);
+            });
+        }
+        
+    </script>
+    <script src="js/card.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/imask/3.4.0/imask.min.js"></script>
+    <script src="js/jquery.maskedinput-1.1.4.pack.js" type="text/javascript"></script>
+    <script src="js/vendor/jquery.mask.min.js"></script>
+    <script src="https://js.iugu.com/v2" type="text/javascript" ></script>
+
+    <script src="js/main-0.1.1.js"></script>
+
+</body>
+
+</html>

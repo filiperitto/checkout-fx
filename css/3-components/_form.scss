@@ -1,0 +1,60 @@
+
+    .form-input{
+        width: 100%;
+        //padding: 25px 10px;
+        padding: 10px 10px 25px;
+        position: relative;
+        .ccicon{
+            height: 20px;
+            bottom: 27px;
+            opacity: 0.6;
+            top: auto;
+            @include respond-to-min(1000){
+                bottom: 37px;
+                right: 25px;
+                width: 40px;
+            }
+        }
+        label{
+            width: 100%;
+            display: block;
+            color: #768994;
+            
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 16px;
+            letter-spacing: 0em;
+            text-align: left;
+            margin-bottom: 10px;
+
+        }
+        input,
+        select{
+            width: 100%;
+            margin-bottom: 7px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 19px;
+            /* identical to box height, or 119% */
+            
+            background: #FFFFFF;
+            color: #768994;
+            border: 2px solid #EEEDED !important;
+            padding: 10px;
+            margin: 0;
+            resize: none;
+            height: 36px;
+            border-radius: 7px;
+            transition: border-color 0.1s, color 0.1s, padding 0.1s;
+            &::placeholder{
+                color: #90A4AF;
+            }
+            &:focus{
+                outline: none;
+                box-shadow: inset 0px 0px 1px 0.5px #D3DCE0;
+                border: 1px solid #D3DCE0 !important;
+            }
+        }
+    }

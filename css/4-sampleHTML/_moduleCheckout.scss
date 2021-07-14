@@ -415,13 +415,20 @@
             width: 100%;
             padding: 25px;
             @include respond-to-min(580){
-                width: 38.9202762084%;
-                padding: 25px 25px 25px 0;
+                width: 100%;
+                padding: 25px;
             }
             ul{
                 list-style: none;
                 padding: 0;
                 margin: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                @include respond-to-min(580){
+                    flex-direction: row;
+                    align-items: center;
+                }
                 li{
                     font-style: normal;
                     font-weight: 500;
@@ -436,6 +443,7 @@
                     display: flex;
                     justify-content: flex-start;
                     align-items: baseline;
+                    margin-right: 20px;
                     icon{
                         margin-right: 15px;
                     }

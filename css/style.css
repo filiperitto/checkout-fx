@@ -1683,16 +1683,19 @@ footer .copy-box ul li a {
 
 .moduleCheckout .card-section .form-input .ccicon {
   height: 20px;
-  bottom: 27px;
+  bottom: auto;
   opacity: 0.6;
   top: auto;
+  top: 44px;
+  right: 30px;
 }
 
 @media only screen and (min-width: 1000px) {
   .moduleCheckout .card-section .form-input .ccicon {
-    bottom: 37px;
-    right: 25px;
+    bottom: auto;
     width: 40px;
+    top: 44px;
+    right: 37px;
   }
 }
 
@@ -1860,6 +1863,13 @@ footer .copy-box ul li a {
   font-size: 13px;
   line-height: 16px;
   color: #768994;
+}
+
+.moduleCheckout .card-section .form-checkbox .fa-check-circle {
+  position: absolute;
+  top: 7px;
+  right: -24px;
+  left: auto;
 }
 
 .moduleCheckout .form-cont-btn {
@@ -2063,6 +2073,7 @@ footer .copy-box ul li a {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+    padding-bottom: 40px;
   }
 }
 

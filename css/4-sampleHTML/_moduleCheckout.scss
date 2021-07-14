@@ -215,13 +215,19 @@
             position: relative;
             .ccicon{
                 height: 20px;
-                bottom: 27px;
+                bottom: auto;
                 opacity: 0.6;
                 top: auto;
+
+                top: 44px;
+                right: 30px;
                 @include respond-to-min(1000){
-                    bottom: 37px;
-                    right: 25px;
+                    bottom: auto;
+                    //right: 25px;
                     width: 40px;
+
+                    top: 44px;
+                    right: 37px;
                 }
             }
             &.form-nome{
@@ -330,6 +336,12 @@
                 line-height: 16px;
                 
                 color: #768994;
+            }
+            .fa-check-circle{
+                position: absolute;
+                top: 7px;
+                right: -24px;
+                left: auto;
             }
         }
     }
@@ -471,6 +483,7 @@
         @include respond-to-min(900){
             width: 33.3%;
             order: 2;
+            padding-bottom: 40px;
         }
         display: flex;
         flex-direction: column;

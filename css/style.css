@@ -1238,6 +1238,14 @@ footer .copy-box ul li a {
   border: 1px solid #D3DCE0 !important;
 }
 
+.form-input select {
+  padding: 9px;
+}
+
+.form-input select:focus {
+  padding: 9px;
+}
+
 .form-input.success input,
 .form-input.success select {
   border-color: #2ecc71;

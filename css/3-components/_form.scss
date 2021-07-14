@@ -57,4 +57,10 @@
                 border: 1px solid #D3DCE0 !important;
             }
         }
+        select{
+            padding: 9px;
+            &:focus{
+                padding: 9px;
+            }
+        }
     }

@@ -675,6 +675,7 @@
             font-size: 13px;
             line-height: 16px;
             text-align: center;
+            margin: 13px auto;
             
             color: #768994;  
         }
@@ -732,6 +733,41 @@
             order: 1;
             @include respond-to-min(900){
                 order: 2;
+            }
+        }
+    }
+}
+.termos{
+    .moduleCheckout{
+        .form-content{
+            width: 100%;
+        }
+        .header-product{
+            h1{
+                text-align: center;
+                width: 100%;
+            }
+
+        }
+        .text-content{
+            padding: 1px 30px 30px;
+            background: #fff;
+            h4,
+            p,
+            li{
+                
+                color: #768994;
+            }
+            ul{
+                padding-left: 20px;
+            }
+            p,
+            li{
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 25px;
+                text-align: left;
             }
         }
     }

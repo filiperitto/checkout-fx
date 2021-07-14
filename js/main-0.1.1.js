@@ -24,7 +24,7 @@ $(document).ready(function() {
     $("#logradouro").blur(function(){marcaEvento('#logradouro','pagamento','preenchimento')});
     $("#telefone").blur(function(){marcaEvento('#telefone','pagamento','preenchimento')});
     $("#holdername_c").blur(function(){marcaEvento('#holdername_c','pagamento','preenchimento')});
-    $("#number_c").blur(function(){marcaEvento('#number_c','pagamento','preenchimento')});
+    //$("#number_c").blur(function(){marcaEvento('#number_c','pagamento','preenchimento')});
     $("#exp_c").blur(function(){marcaEvento('#exp_c','pagamento','preenchimento')});  
     $("#cvv_c").blur(function(){marcaEvento('#cvv_c','pagamento','preenchimento')});
     $("#installments").blur(function(){marcaEvento('#installments','pagamento','preenchimento')});
@@ -32,7 +32,7 @@ $(document).ready(function() {
     $("#cpf").mask(CpfCnpjMaskBehavior, cpfCnpjpOptions);
     $("#cep").mask("00000-000");
     $("#telefone").mask("(00) 00000-0000");
-    $("#number_c").mask("0000 0000 0000 0000");
+    //$("#number_c").mask("0000 0000 0000 0000");
     $("#exp_c").mask("00/00");
     $("#cvv_c").mask("000")
 });

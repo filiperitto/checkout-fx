@@ -27,6 +27,7 @@
     letter-spacing: -0.045em;
     color: #fff;
     box-shadow: 0px 10px 40px -10px rgba(117, 226, 248, 0);
+    cursor: pointer;
     @include respond-to-min(580){
         margin-right: 20px;
     }

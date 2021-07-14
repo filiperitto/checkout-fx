@@ -65,10 +65,23 @@ footer{
             align-items: center;
             flex-direction: column;
             text-align: center;
-            border-top: 1px solid #000;
+            position: relative;
+            padding-top: 40px;
+            padding-bottom: 55px;
             @include respond-to-min(750){
                 flex-direction: row;
                 align-items: center;
+            }
+            &:after{
+                position: absolute;
+                content: '';
+                width: 95%;
+                height: 1px;
+                top: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                background: rgba(123, 142, 152, 0.25);
             }
         }
         p{

@@ -600,6 +600,7 @@ header img {
   color: #fff;
   -webkit-box-shadow: 0px 10px 40px -10px rgba(117, 226, 248, 0);
           box-shadow: 0px 10px 40px -10px rgba(117, 226, 248, 0);
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 580px) {
@@ -1082,7 +1083,9 @@ footer .copy-box .wrap {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  border-top: 1px solid #000;
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 55px;
 }
 
 @media only screen and (min-width: 750px) {
@@ -1095,6 +1098,18 @@ footer .copy-box .wrap {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+
+footer .copy-box .wrap:after {
+  position: absolute;
+  content: '';
+  width: 95%;
+  height: 1px;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: rgba(123, 142, 152, 0.25);
 }
 
 footer .copy-box p {
@@ -2329,6 +2344,7 @@ footer .copy-box ul li a {
   font-size: 13px;
   line-height: 16px;
   text-align: center;
+  margin: 13px auto;
   color: #768994;
 }
 
@@ -2405,5 +2421,38 @@ footer .copy-box ul li a {
         -ms-flex-order: 2;
             order: 2;
   }
+}
+
+.termos .moduleCheckout .form-content {
+  width: 100%;
+}
+
+.termos .moduleCheckout .header-product h1 {
+  text-align: center;
+  width: 100%;
+}
+
+.termos .moduleCheckout .text-content {
+  padding: 1px 30px 30px;
+  background: #fff;
+}
+
+.termos .moduleCheckout .text-content h4,
+.termos .moduleCheckout .text-content p,
+.termos .moduleCheckout .text-content li {
+  color: #768994;
+}
+
+.termos .moduleCheckout .text-content ul {
+  padding-left: 20px;
+}
+
+.termos .moduleCheckout .text-content p,
+.termos .moduleCheckout .text-content li {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: left;
 }
 /*# sourceMappingURL=style.css.map */
